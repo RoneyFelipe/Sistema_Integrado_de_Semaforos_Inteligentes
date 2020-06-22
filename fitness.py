@@ -2,9 +2,8 @@ import os, subprocess, sys, socket, time, struct, random, datetime
 
 import constant, population, guy
 
-class Rating:
+class test:
     def evaluation(self,generation):
-        generation = population.Genesis()
         individuals = generation
         couple = []
         selector = 0

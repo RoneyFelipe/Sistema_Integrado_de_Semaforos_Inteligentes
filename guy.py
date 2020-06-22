@@ -1,6 +1,7 @@
 import os, subprocess, sys, socket, time, struct, random, datetime
 
 import constant, population, fitness
+
 class Guy:
     def create_Cromossome(self): 
         cromossome = str()
