@@ -2,8 +2,7 @@ import os, subprocess, sys, socket, time, struct, random, datetime
 
 import constant, guy, fitness
 
-
-class Genesis:
+class Population:
     def __init__(self):
         self.create_guy = guy.Guy()
         self.test = fitness.test()
@@ -14,6 +13,3 @@ class Genesis:
            generation[i].append(self.create_guy.create_Cromossome())
         print(len(generation))
         self.test.evaluation(generation)
-
-x = Genesis()
-x.Principle()
