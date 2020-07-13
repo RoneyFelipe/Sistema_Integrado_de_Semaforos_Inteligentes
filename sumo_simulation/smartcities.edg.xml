@@ -1,0 +1,23 @@
+<edges>
+	<edge id="AB" from="A" to="B"/>
+	<edge id="BA" from="B" to="A"/>
+	<edge id="BC" from="B" to="C"/>
+	<edge id="CB" from="C" to="B"/>
+	<!-- A's Nodes -->
+	<edge id="A_AT" from="A" to="AT"/>
+	<edge id="AT_A" from="AT" to="A"/>
+	<edge id="A_AB" from="A" to="AB"/>
+	<edge id="AB_A" from="AB" to="A"/>
+	<edge id="A_AL" from="A" to="AL"/>
+	<edge id="AL_A" from="AL" to="A"/>
+	<!-- B's Nodes -->
+	<edge id="B_BT" from="B" to="BT"/>
+	<edge id="BT_B" from="BT" to="B"/>
+	<!-- C's Nodes -->
+	<edge id="C_CT" from="C" to="CT"/>
+	<edge id="CT_C" from="CT" to="C"/>
+	<edge id="C_CB" from="C" to="CB"/>
+	<edge id="CB_C" from="CB" to="C"/>
+	<edge id="C_CR" from="C" to="CR"/>
+	<edge id="CR_C" from="CR" to="C"/>
+</edges>

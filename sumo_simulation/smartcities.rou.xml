@@ -1,0 +1,7 @@
+<routes>
+    <vType accel="1" decel="6" id="slow_car" length="6" maxSpeed="20" sigma="0" />
+
+    <route id="AB" edges="AB BC CB BA" />
+
+    <vehicle depart="1" id="Car1" route="AB" type="slow_car" color="1,0,0" />
+</routes>
