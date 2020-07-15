@@ -1,7 +1,13 @@
 <routes>
-    <vType accel="1" decel="6" id="slow_car" length="6" maxSpeed="20" sigma="0" />
-
-    <route id="AB" edges="AB BC CB BA" />
-
-    <vehicle depart="1" id="Car1" route="AB" type="slow_car" color="1,0,0" />
+  <vType accel="2" decel="4" maxSpeed="20" id="Car" length="5" color="0,0,1" />
+  <vType accel="2" decel="4" maxSpeed="20" id="Taxi" sigma="1" length="5" color="1,0,0" />
+  <vType accel="1" decel="3" maxSpeed="16" id="Bus" length="10" guiShape="bus" />
+  <route id="rota0" edges="A_B B_C C_D D_E"/>
+  <route id="rota1" edges="E_D D_C C_B B_A"/>
+  <flow id="f1" type="Car"  route="rota0" begin="0"  end="900" period="30" />
+  <flow id="f2" type="Taxi" route="rota1" begin="0"   end="300" period="60" />
+  <flow id="f3" type="Bus"  route="rota0" begin="20" end="600" period="10">
+    <stop busStop="busstop1" until="410"/>
+  </flow>
+  <flow id="f4" type="Bus" route="rota0" begin="601" end="900" probability="0.1" color="0,1,0" />
 </routes>

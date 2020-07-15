@@ -1,15 +1,21 @@
 <nodes>
-    <node id="A" x="100.0" y="0.0" type="trafficlight"/>
+    <node id="A" x="100.0" y="0.0" type="traffic_light"/>
     <node id="AL" x="0.0" y="0"/>
     <node id="AT" x="100.0" y="100.0"/>
-    <node id="AB" x="100.0" y="-100.0"/>
+    
 
-    <node id="B" x="200.0" y="0.0" type="trafficlight"/>
+    <node id="B" x="200.0" y="0.0" type="traffic_light"/>
     <node id="BT" x="200.0" y="100.0"/>
 
-    <node id="C" x="300.0" y="0.0" type="trafficlight"/>
-    <node id="CR" x="400.0" y="0.0" type="trafficlight"/>
-    <node id="CT" x="300.0" y="100.0" type="trafficlight"/>
-    <node id="CB" x="300.0" y="-100.0" type="trafficlight"/>
+    <node id="C" x="300.0" y="0.0" type="traffic_light"/>
+    <node id="CR" x="400.0" y="0.0"/>
+    <node id="CT" x="300.0" y="100.0"/>
+
+    <node id="D" x="300.0" y="-100.0" />
+    <node id="DR" x="400.0" y="-100.0" />
+
+    <node id="E" x="100.0" y="-100.0" type="traffic_light"/>
+    <node id="EL" x="0.0" y="-100.0"/>
+
 
 </nodes>
