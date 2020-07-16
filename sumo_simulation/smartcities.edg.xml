@@ -1,8 +1,5 @@
 <edges>
 	<edge id="A_B" from="A" to="B" type="Triple"/>
-		
-	
-
 	<edge id="B_A" from="B" to="A" type="Triple"/>
 	<edge id="B_C" from="B" to="C" type="Triple"/>
 	<edge id="C_B" from="C" to="B" type="Triple"/>
@@ -12,9 +9,13 @@
 	<edge id="E_A" from="E" to="A" type="Double"/>
 	<edge id="E_A" from="E" to="A" type="Double"/>
 	<edge id="A_E" from="A" to="E" type="Double"/>
+	<edge id="G_E" from="G" to="E" type="Double"/>
+	<edge id="E_G" from="E" to="G" type="Double"/>
+	<edge id="F_D" from="F" to="D" type="Double"/>
+	<edge id="D_F" from="D" to="F" type="Double"/>
 	<!-- A's Nodes -->
-	<edge id="A_AT" from="A" to="AT" type="Triple"/>
-	<edge id="AT_A" from="AT" to="A" type="Triple"/>
+	<edge id="A_AT" from="A" to="AT" type="Double"/>
+	<edge id="AT_A" from="AT" to="A" type="Double"/>
 
 	<edge id="A_AL" from="A" to="AL" type="Triple"/>
 	<edge id="AL_A" from="AL" to="A" type="Triple"/>
