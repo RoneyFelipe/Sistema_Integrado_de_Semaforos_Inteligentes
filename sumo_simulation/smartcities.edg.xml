@@ -1,38 +1,65 @@
 <edges>
+<!-- PRIMEIRA LINHA HORIZONTAL -->
 	<edge id="A_B" from="A" to="B" type="Triple"/>
 	<edge id="B_A" from="B" to="A" type="Triple"/>
 	<edge id="B_C" from="B" to="C" type="Triple"/>
 	<edge id="C_B" from="C" to="B" type="Triple"/>
+
+	<!-- A's Nodes -->
+	<edge id="A_AL" from="A" to="AL" type="Triple"/>
+	<edge id="AL_A" from="AL" to="A" type="Triple"/>
+
+	<!-- C's Nodes -->
+	<edge id="C_CR" from="C" to="CR" type="Triple"/>
+	<edge id="CR_C" from="CR" to="C" type="Triple"/>
+
+
+<!-- SEGUNDA LINHA HORIZONTAL -->
 	<edge id="D_E" from="D" to="E" type="Double"/>
 	<edge id="E_D" from="E" to="D" type="Double"/>
-	<edge id="D_C" from="D" to="C" type="Double"/>
-	<edge id="E_A" from="E" to="A" type="Double"/>
-	<edge id="E_A" from="E" to="A" type="Double"/>
-	<edge id="A_E" from="A" to="E" type="Double"/>
-	<edge id="G_E" from="G" to="E" type="Double"/>
-	<edge id="E_G" from="E" to="G" type="Double"/>
-	<edge id="F_D" from="F" to="D" type="Double"/>
-	<edge id="D_F" from="D" to="F" type="Double"/>
+	<edge id="F_E" from="F" to="E" type="Double"/>
+	<edge id="E_F" from="E" to="F" type="Double"/>
+
+	<!-- C's Nodes -->
+	<edge id="F_FL" from="F" to="FL" type="Double"/>
+	<edge id="FL_F" from="FL" to="F" type="Double"/>
+
+	<!-- D's Nodes -->
+	<edge id="D_DR" from="D" to="DR" type="Double"/>
+	<edge id="DR_D" from="DR" to="D" type="Double"/>
+
+
+<!-- PRIMEIRA LINHA VERTICAL -->
+	<edge id="A_F" from="A" to="F" type="Double"/>
+	<edge id="F_A" from="F" to="A" type="Double"/>
+
 	<!-- A's Nodes -->
 	<edge id="A_AT" from="A" to="AT" type="Double"/>
 	<edge id="AT_A" from="AT" to="A" type="Double"/>
 
-	<edge id="A_AL" from="A" to="AL" type="Triple"/>
-	<edge id="AL_A" from="AL" to="A" type="Triple"/>
+	<!-- F's Nodes -->
+	<edge id="F_FB" from="F" to="FB" type="Double"/>
+	<edge id="FB_F" from="FB" to="F" type="Double"/>
+<!-- SEGUNDA LINHA VERTICAL -->
 	<!-- B's Nodes -->
 	<edge id="B_BT" from="B" to="BT" type="Double"/>
 	<edge id="BT_B" from="BT" to="B" type="Double"/>
-	<!-- C's Nodes -->
+
+	<!-- E's Nodes -->
+	<edge id="EB_E" from="EB" to="E" type="Double"/>
+	<edge id="E_EB" from="E" to="EB" type="Double"/>
+
+<!-- TERCEIRA LINHA VERTICAL -->
+	<edge id="D_C" from="D" to="C" type="Double"/>
+	<edge id="C_D" from="C" to="D" type="Double"/>
+		
+	<!-- c's Nodes -->
 	<edge id="C_CT" from="C" to="CT" type="Double"/>
 	<edge id="CT_C" from="CT" to="C" type="Triple"/>
-	<edge id="C_CR" from="C" to="CR" type="Triple"/>
-	<edge id="CR_C" from="CR" to="C" type="Triple"/>
-	<edge id="C_D" from="C" to="D" type="Double"/>
+
 	<!-- D's Nodes -->
-	<edge id="D_DR" from="D" to="DR" type="Double"/>
-	<edge id="DR_D" from="DR" to="D" type="Double"/>
-	<!-- E's Nodes -->
-	<edge id="E_EL" from="E" to="EL" type="Double"/>
-	<edge id="EL_E" from="EL" to="E" type="Double"/>
+	<edge id="DB_D" from="DB" to="D" type="Double"/>
+	<edge id="D_DB" from="D" to="DB" type="Double"/>
+
 
 </edges>
