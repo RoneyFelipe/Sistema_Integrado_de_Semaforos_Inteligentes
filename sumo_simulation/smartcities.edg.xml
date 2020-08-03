@@ -20,7 +20,7 @@
 	<edge id="F_E" from="F" to="E" type="Double"/>
 	<edge id="E_F" from="E" to="F" type="Double"/>
 
-	<!-- C's Nodes -->
+	<!-- F's Nodes -->
 	<edge id="F_FL" from="F" to="FL" type="Double"/>
 	<edge id="FL_F" from="FL" to="F" type="Double"/>
 
@@ -40,6 +40,7 @@
 	<!-- F's Nodes -->
 	<edge id="F_FB" from="F" to="FB" type="Double"/>
 	<edge id="FB_F" from="FB" to="F" type="Double"/>
+	
 <!-- SEGUNDA LINHA VERTICAL -->
 	<!-- B's Nodes -->
 	<edge id="B_BT" from="B" to="BT" type="Double"/>
@@ -55,7 +56,7 @@
 		
 	<!-- c's Nodes -->
 	<edge id="C_CT" from="C" to="CT" type="Double"/>
-	<edge id="CT_C" from="CT" to="C" type="Triple"/>
+	<edge id="CT_C" from="CT" to="C" type="Double"/>
 
 	<!-- D's Nodes -->
 	<edge id="DB_D" from="DB" to="D" type="Double"/>
