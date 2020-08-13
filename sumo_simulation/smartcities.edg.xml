@@ -62,5 +62,4 @@
 	<edge id="DB_D" from="DB" to="D" type="Double"/>
 	<edge id="D_DB" from="D" to="DB" type="Double"/>
 
-
 </edges>

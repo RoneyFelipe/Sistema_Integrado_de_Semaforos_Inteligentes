@@ -1,6 +1,6 @@
 import os, subprocess, sys, socket, time, struct, random, datetime
 
-import constant, population, fitness
+import constant, population
 
 class Guy:
     def create_Cromossome(self): 
@@ -21,7 +21,7 @@ class Guy:
 
                 for i in range(0, total_period_time):
                     if i in genes_position:
-                        cromossome += str('1')
+                        cromossome += str('1') 
                     else:
                         cromossome += str('0')
         return cromossome
