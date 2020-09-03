@@ -11,7 +11,7 @@
 
   <!-- MOTOS -->
     <vType id="slow_motorcycle" accel="2" decel="5" length="3" minGap="0.2" maxSpeed="30.0" sigma="0.0" color="255,255,255" guiShape="motorcycle"/>
-    <vType id="fast_motorcycle" accel="3" decel="4" length="3" minGap="0.2" maxSpeed="100.0" sigma="0.0" color="1,0,0" guiShape="motorcycle"/>
+    <vType id="fast_motorcycle" accel="3" decel="4" length="3" minGap="0.2" maxSpeed="60.0" sigma="0.0" color="1,0,0" guiShape="motorcycle"/>
 
 <!-- ROTAS -->
 
@@ -24,179 +24,128 @@
   <!-- SUBIDA E DESCIDA -->
     <route id="FB_F/F_A/A_AT" edges="FB_F F_A A_AT"/>
     <route id="AT_A/A_F/F_FB" edges="AT_A A_F F_FB"/>
-    <route id="CT_C/C_D/D_DR" edges="CT_C C_D D_DB"/>
+    <route id="CT_C/C_D/D_DB" edges="CT_C C_D D_DB"/>
     <route id="DB_D/D_C/C_CT" edges="DB_D D_C C_CT"/>
   
   <!-- FAZER O RETORNO -->
     <route id="FB_F/F_E/E_EB" edges="FB_F F_E E_EB"/>
-    <route id="EB_E/E_F/F_FB" edges="EB_E E_F F_FB"/>
     <route id="FB_F/F_E/E_D/D_DB" edges="FB_F F_E E_D D_DB"/>
-    <route id="DB_D/D_E/E_F/F_FB" edges="DB_D D_E E_F F_FB"/>
     <route id="EB_E/E_D/D_DB" edges="EB_E E_D D_DB"/>
-
+    <route id="BT_B/B_A/A_AT" edges="BT_B B_A A_AT"/>
+    <route id="BT_B/B_A/A_AL" edges="BT_B B_A A_AL"/>
+    <route id="BT_B/B_C/C_CT" edges="BT_B B_C C_CT"/>
+    <route id="BT_B/B_C/C_CR" edges="BT_B B_C C_CR"/>
     
-  <!-- CURVA APÓ LINHA RETA HORIZONTAL -->
+  <!-- CURVA(AS) APÓS LINHA RETA SAINDO DA VERTICAL-->
     <!-- A's edges -->
-      <route id="AL_A/A_F/F_FL" edges="AL_A A_F F_FL"/>
-      <route id="AL_A/A_F/F_FB" edges="AL_A A_F F_FB"/>
+      <route id="AT_A/A_F/F_FL" edges="AL_A A_F F_FL"/>
+      <route id="AT_A/A_F/F_E/E_EB" edges="AT_A A_F F_E E_EB"/>
+      <route id="AT_A/A_F/F_E/E_D/D_DB" edges="AT_A A_F F_E E_D D_DB"/>
+      <route id="AT_A/A_F/F_E/E_D/D_DR" edges="AT_A A_F F_E E_D D_DB"/>
+      <route id="AT_A/A_B/B_C/C_D/D_DB" edges="AL_A A_B B_C C_D D_DB"/>
+      <route id="AT_A/A_B/B_C/C_D/D_DR" edges="AL_A A_B B_C C_D D_DR"/>
+    
+    <!-- C's edges -->
+      <route id="CT_C/C_D/D_E/E_F/F_FL" edges="CT_C C_D D_E E_F F_FL"/>
+      <route id="CT_C/C_D/D_E/E_F/F_FB" edges="CT_C C_D D_E E_F F_FB"/>
+      <route id="CT_C/C_D/D_DR" edges="CT_C C_D D_DR"/>
+      <route id="CT_C/C_B/B_BT" edges="CT_C C_B B_BT"/>
+      <route id="CT_C/C_B/B_A/A_AL" edges="CT_C C_B B_A A_AL"/>
+      <route id="CT_C/C_B/B_A/A_AT" edges="CT_C C_B B_A A_AT"/>
+
+    <!-- F's edges -->
+      <route id="FB_F/F_A/A_B/B_C/C_CR" edges="FB_F F_A A_B B_C C_CR"/>
+      <route id="FB_F/F_A/A_B/B_C/C_D/D_DB" edges="FB_F F_A A_B B_C C_CR C_D D_DB"/>
+      <route id="FB_F/F_A/A_B/B_C/C_D/D_DR" edges="FB_F F_A A_B B_C C_CR C_D D_DR"/>
+      <route id="FB_F/F_E/E_D/D_C/C_CR" edges="FB_F F_E E_D D_C C_CR"/>
+      <route id="FB_F/F_E/E_D/D_C/C_CT" edges="FB_F F_E E_D D_C C_CT"/>
+  
+
+  <!-- CURVA(AS) APÓS LINHA RETA SAINDO DA HORIZONATL-->
+    <!-- A's edges -->
+      <route id="AL_A/A_B/B_C/C_D/D_DR" edges="AL_A A_B B_C C_D D_DB"/>
       <route id="AL_A/A_B/B_C/C_D/D_DB" edges="AL_A A_B B_C C_D D_DB"/>
-      <route id="AL_A/A_B/B_C/C_D/D_DR" edges="AL_A A_B B_C C_D D_DR"/>
+      <route id="AL_A/A_F/F_FB" edges="AL_A A_F F_FB"/>
+      <route id="AL_A/A_F/F_FL" edges="AL_A A_F F_FL"/>
+      <route id="AL_A/A_F/F_E/E_EB" edges="AL_A A_F F_E E_EB"/>
+      <route id="AL_A/A_F/F_E/E_D/D_DR" edges="AL_A A_F F_E E_D D_DR"/>
+      <route id="AL_A/A_F/F_E/E_D/D_DB" edges="AL_A A_F F_E E_D D_DB"/>
+
 
     <!-- C's edges -->
       <route id="CR_C/C_CT" edges="CR_C C_CT"/>
       <route id="CR_C/C_B/B_BT" edges="CR_C C_B B_BT"/>
       <route id="CR_C/C_B/B_A/A_AT" edges="CR_C C_B B_A A_AT"/>
 
+
     <!-- D's edges -->
       <route id="DR_D/D_DB" edges="DR_D D_DB"/>
-      <route id="DR_D/D_C" edges="DR_D D_C"/>
+      <route id="DR_D/D_C/C_CR" edges="DR_D D_C C_CR"/>
       <route id="DR_D/D_C/C_CT" edges="DR_D D_C C_CT"/>
       <route id="DR_D/D_E/E_F/F_A/A_AT" edges="DR_D D_E E_F F_A A_AT"/>
 
+
     <!-- F's edges -->
-      <route id="FL_F/F_FB" edges="FL_F F_FB"/>
-      <route id="FL_F/F_A/A_AT" edges="FL_F F_A A_AT"/>
       <route id="FL_F/F_E/E_EB" edges="FL_F F_E E_EB"/>
       <route id="FL_F/F_E/E_D/D_DB" edges="FL_F F_E E_D D_DB"/>
-      <route id="FB_F/F_A/A_B/B_C/C_CR" edges="FB_F F_A A_B B_C C_CR"/>
-      <route id="FB_F/F_E/E_D/D_C/C_CR" edges="FB_F F_E E_D D_C C_CR"/>
-
-  <!-- CURVA APÓ LINHA RETA VERTICAL -->
-    <!-- A's edges -->
-      <route id="AT_A/A_F/F_FL" edges="AT_A A_F F_FL"/>
-
-    <!-- C's edges -->
-
-    <!-- D's edges -->
-
-
-    <!-- F's edges -->
-      <route id="FB_F/F_A/B_C/C_CT" edges="FB_F F_A B_C C_CT"/>
-      <route id="FB_F/F_A/B_C/C_CR" edges="FB_F F_A B_C C_CR"/>
-
+      <route id="FL_F/F_FB" edges="FL_F F_FB"/>
+      <route id="FL_F/F_A/A_AT" edges="FL_F F_A A_AT"/>
 
     
-  <!-- Manha -->
+  <!-- FASE_ONE -->
     <!-- SLOW -->
       <!-- SLOW_CARS-->
-      <flow id="flow_slow_car1" type="slow_car" route="AL_A/A_B/B_C/C_CR" begin="0" end="430" period="90"/>
-      <flow id="flow_slow_car2" type="slow_car" route="AL_A/A_F/F_FB" begin="0" end="430" probability="0.01"/>
-      <flow id="flow_slow_car3" type="slow_car" route="AL_A/A_F/F_FL" begin="0" end="430" probability="0.01"/>
-      <flow id="flow_slow_car4" type="slow_car" route="AL_A/A_F/F_FB" begin="0" end="430" probability="0.01"/>
-      <flow id="flow_slow_car5" type="slow_car" route="AT_A/A_F/F_FB" begin="0" end="430" probability="0.01"/>
-      <flow id="flow_slow_car6" type="slow_car" route="AT_A/A_F/F_FL" begin="0" end="430" probability="0.01"/>
+      <flow id="flow_slow_car_1" type="slow_car" route="AL_A/A_B/B_C/C_CR" begin="0" end="600" period="90"/>
+      <flow id="flow_slow_car_2" type="slow_car" route="CR_C/C_B/B_A/A_AL" begin="0" end="600" period="90"/>
 
-
-      <flow id="flow_slow_car7" type="slow_car" route="CR_C/C_B/B_A/A_AL" begin="0" end="430" period="90"/>
-      <flow id="flow_slow_car8" type="slow_car" route="CR_C/C_CT" begin="0" end="430" probability="0.01"/>
-      <flow id="flow_slow_car9" type="slow_car" route="CR_C/C_B/B_BT" begin="0" end="430" probability="0.01"/>
-      <flow id="flow_slow_car10" type="slow_car" route="CR_C/C_B/B_A/A_AT" begin="0" end="430" probability="0.01"/>
-
-      <flow id="flow_slow_car11" type="slow_car" route="DR_D/D_E/E_F/F_FL" begin="0" end="430" period="90"/>
-
-      <flow id="flow_slow_car12" type="slow_car" route="FL_F/F_E/E_D/D_DR" begin="0" end="430" period="90"/>
-      <flow id="flow_slow_car13" type="slow_car" route="FL_F/F_E/E_D/D_DR" begin="0" end="430" period="90"/>
-
+      <flow id="flow_slow_car_3" type="slow_car" route="DR_D/D_E/E_F/F_FL" begin="0" end="600" period="90"/>
+      <flow id="flow_slow_car_4" type="slow_car" route="FL_F/F_E/E_D/D_DR" begin="0" end="600" period="90"/>
       
-      <flow id="flow_slow_car14" type="slow_car" route="FB_F/F_A/A_AT" begin="0" end="430" period="100"/>
-      <flow id="flow_slow_car15" type="slow_car" route="CT_C/C_D/D_DR" begin="0" end="430" period="100"/>
-      <flow id="flow_slow_car16" type="slow_car" route="DB_D/D_C/C_CT" begin="0" end="430" period="100"/>
+      <flow id="flow_slow_car_5" type="slow_car" route="FB_F/F_A/A_AT" begin="0" end="600" period="90"/>
+      <flow id="flow_slow_car_6" type="slow_car" route="AT_A/A_F/F_FB" begin="0" end="600" period="90"/>
 
-      <!-- SLOW_MOTORCYCLE -->
-      <flow id="flow_slow_motorcycle1" type="slow_motorcycle" route="AL_A/A_B/B_C/C_CR" begin="0"  end="430" period="95"/>
-      <flow id="flow_slow_motorcycle2" type="slow_motorcycle" route="AL_A/A_F/F_FB" begin="0"  end="430" period="95"/>
-      <flow id="flow_slow_motorcycle3" type="slow_motorcycle" route="AL_A/A_B/B_C/C_D/D_DR" begin="0"  end="430" period="95"/>
-      <flow id="flow_slow_motorcycle4" type="slow_motorcycle" route="CR_C/C_B/B_A/A_AL" begin="0"  end="430" period="95"/>
-      <flow id="flow_slow_motorcycle5" type="slow_motorcycle" route="DR_D/D_E/E_F/F_FL" begin="0"  end="430" period="95"/>
-      <flow id="flow_slow_motorcycle6" type="slow_motorcycle" route="FL_F/F_E/E_D/D_DR" begin="0"  end="430" period="95"/>
+      <flow id="flow_slow_car_7" type="slow_car" route="CT_C/C_D/D_DB" begin="0" end="600" period="90"/>
+      <flow id="flow_slow_car_8" type="slow_car" route="DB_D/D_C/C_CT" begin="0" end="600" period="90"/>
 
       <!-- SLOW_BUS -->
-          <flow id="flow_slow_bus1" type="slow_bus" route="AL_A/A_B/B_C/C_CR" begin="0"  end="430" period="100">
+          <flow id="flow_slow_bus_1" type="slow_bus" route="AL_A/A_B/B_C/C_CR" begin="0"  end="600" period="100">
               <stop busStop="busstop1" duration="25"/>
           </flow>
-          <flow id="flow_slow_bus2" type="slow_bus" route="CR_C/C_B/B_A/A_AL" begin="0"  end="430" period="100"/>
-          <flow id="flow_slow_bus3" type="slow_bus" route="FL_F/F_E/E_D/D_DR" begin="0"  end="430" probability="0.002"/>
-          <flow id="flow_slow_bus4" type="slow_bus" route="DR_D/D_E/E_F/F_FL" begin="0"  end="430" probability="0.002"/>
+          <flow id="flow_slow_bus_2" type="slow_bus" route="CR_C/C_B/B_A/A_AL" begin="0"  end="600" period="100"/>
+          <flow id="flow_slow_bus_3" type="slow_bus" route="FL_F/F_E/E_D/D_DR" begin="0"  end="600" probability="0.002"/>
+          <flow id="flow_slow_bus_4" type="slow_bus" route="DR_D/D_E/E_F/F_FL" begin="0"  end="600" probability="0.002"/>
 
-    <!-- MEDIUM -->
+      <!-- SLOW_MOTORCYCLE -->
+        <flow id="flow_slow_motorcycle_1" type="slow_motorcycle" route="AL_A/A_B/B_C/C_CR" begin="35"  end="600" period="95"/>
+        
+        <flow id="flow_slow_motorcycle_2" type="slow_motorcycle" route="DR_D/D_E/E_F/F_FL" begin="35"  end="600" period="95"/>
+        
       <!-- MEDIUM_CARS -->
-        <flow id="medium_slow_car1" type="medium_car" route="AL_A/A_B/B_C/C_CR" begin="80"  end="430" period="95"/>
-        <flow id="medium_slow_car2" type="medium_car" route="CR_C/C_B/B_A/A_AL" begin="80"  end="430" period="95"/>
-        <flow id="medium_slow_car3" type="medium_car" route="DR_D/D_E/E_F/F_FL" begin="80"  end="430" period="80"/>
-        <flow id="medium_slow_car4" type="medium_car" route="FL_F/F_E/E_D/D_DR" begin="80"  end="430" period="50"/>
-        <flow id="medium_slow_car_SD1" type="medium_car" route="AT_A/A_F/F_FB" begin="80"  end="430" period="110"/>
-        <flow id="medium_slow_car_SD2" type="medium_car" route="FB_F/F_A/A_AT" begin="80"  end="430" period="110"/>
-        <flow id="medium_slow_car_SD3" type="medium_car" route="CT_C/C_D/D_DR" begin="80"  end="430" period="110"/>
-        <flow id="medium_slow_car_SD4" type="medium_car" route="DB_D/D_C/C_CT" begin="80"  end="430" period="110"/>
+        <flow id="medium_car_1" type="medium_car" route="AL_A/A_F/F_FB" begin="80"  end="600" period="95"/>
+        <flow id="medium_car_2" type="medium_car" route="FL_F/F_A/A_AT" begin="80"  end="600" period="95"/>
+        <flow id="medium_car_3" type="medium_car" route="DR_D/D_C/C_CT" begin="80"  end="600" period="95"/>
+        <flow id="medium_car_4" type="medium_car" route="CR_C/C_B/B_A/A_AT" begin="80"  end="600" period="95"/>
 
     <!-- FAST -->
       <!-- FAST_CAR -->
-        <flow id="flow_fast_car1" type="fast_car" route="AL_A/A_B/B_C/C_CR" begin="100"  end="430" probability="0.002"/>  
-        <flow id="flow_fast_car2" type="fast_car" route="CR_C/C_B/B_A/A_AL" begin="100"  end="430" probability="0.002"/> 
-        <flow id="flow_fast_car3" type="fast_car" route="DR_D/D_E/E_F/F_FL" begin="100"  end="430" probability="0.002"/>  
-        <flow id="flow_fast_car4" type="fast_car" route="FL_F/F_E/E_D/D_DR" begin="100"  end="430" probability="0.002"/> 
-        <flow id="flow_fast_car_SD1" type="fast_car" route="AT_A/A_F/F_FB" begin="100"  end="430" probability="0.002"/>  
-        <flow id="flow_fast_car_SD2" type="fast_car" route="FB_F/F_A/A_AT" begin="100"  end="430" probability="0.002"/> 
-        <flow id="flow_fast_car_SD3" type="fast_car" route="CT_C/C_D/D_DR" begin="100"  end="430" probability="0.002"/>  
-        <flow id="flow_fast_car_SD4" type="fast_car" route="DB_D/D_C/C_CT" begin="100"  end="430" probability="0.002"/> 
+        <!-- <flow id="flow_fast_car_1" type="fast_car" route="AL_A/A_B/B_C/C_CR" begin="100"  end="430" probability="0.002"/>  
+        <flow id="flow_fast_car_2" type="fast_car" route="CR_C/C_B/B_A/A_AL" begin="100"  end="430" probability="0.002"/> 
+        <flow id="flow_fast_car_3" type="fast_car" route="DR_D/D_E/E_F/F_FL" begin="100"  end="430" probability="0.002"/>  
+        <flow id="flow_fast_car_4" type="fast_car" route="FL_F/F_E/E_D/D_DR" begin="100"  end="430" probability="0.002"/> 
+        <flow id="flow_fast_car_5" type="fast_car" route="AT_A/A_F/F_FB" begin="100"  end="430" probability="0.002"/>  
+        <flow id="flow_fast_car_6" type="fast_car" route="FB_F/F_A/A_AT" begin="100"  end="430" probability="0.002"/> 
+        <flow id="flow_fast_car_7" type="fast_car" route="CT_C/C_D/D_DR" begin="100"  end="430" probability="0.002"/>  
+        <flow id="flow_fast_car_8" type="fast_car" route="DB_D/D_C/C_CT" begin="100"  end="430" probability="0.002"/>  -->
 
       <!-- FAST_MOTORCYCLE -->
-        <flow id="flow_fast_motorcycle1" type="fast_motorcycle" route="AL_A/A_B/B_C/C_CR" begin="150"  end="430" probability="0.002"/>
-        <flow id="flow_fast_motorcycle2" type="fast_motorcycle" route="CR_C/C_B/B_A/A_AL" begin="150"  end="430" probability="0.002"/>
+        <!-- <flow id="flow_fast_motorcycle_1" type="fast_motorcycle" route="AL_A/A_B/B_C/C_CR" begin="150"  end="430" probability="0.002"/>
+        <flow id="flow_fast_motorcycle_2" type="fast_motorcycle" route="CR_C/C_B/B_A/A_AL" begin="150"  end="430" probability="0.002"/> -->
 
       <!-- FAST_BUS -->
-        <flow id="flow_fast_bus1" type="fast_bus" route="AL_A/A_B/B_C/C_CR" begin="200"  end="430" probability="0.002"/>
-        <flow id="flow_fast_bus2" type="fast_bus" route="CR_C/C_B/B_A/A_AL" begin="200"  end="430" probability="0.002"/>
-        <flow id="flow_fast_bus3" type="fast_bus" route="DR_D/D_E/E_F/F_FL" begin="200"  end="430" probability="0.001"/>
-        <flow id="flow_fast_bus4" type="fast_bus" route="FL_F/F_E/E_D/D_DR" begin="200"  end="430" probability="0.001"/>
-      
-
-      
-    <!-- <flow id="flow_slow_bus4" type="slow_bus" route="route12" begin="0"  end="430" period="100"/>
-    <flow id="flow_slow_bus5" type="fast_bus" route="route13" begin="0"  end="430" probability="0.005"/>
-    <flow id="flow_slow_bus6" type="fast_bus" route="route14" begin="0"  end="430" probability="0.005"/>
-
+        <!-- <flow id="flow_fast_bus_1" type="fast_bus" route="AL_A/A_B/B_C/C_CR" begin="200"  end="430" probability="0.002"/>
+        <flow id="flow_fast_bus_2" type="fast_bus" route="CR_C/C_B/B_A/A_AL" begin="200"  end="430" probability="0.002"/>
+        <flow id="flow_fast_bus_3" type="fast_bus" route="DR_D/D_E/E_F/F_FL" begin="200"  end="430" probability="0.001"/>
+        <flow id="flow_fast_bus_4" type="fast_bus" route="FL_F/F_E/E_D/D_DR" begin="200"  end="430" probability="0.001"/> -->
     
-    
-    
-
-    <! Hora do Almoço 
-    <flow id="flow_slow_car_HA_1" type="slow_car" route="route11" begin="430"  end="700" period="35"/>
-    <flow id="flow_slow_car_HA_2" type="slow_car" route="route12" begin="430"  end="700" period="35"/>
-    <flow id="flow_slow_car_HA_3" type="slow_car" route="route4" begin="430"  end="700" period="35"/>
-    <flow id="medium_slow_car_HA_1" type="medium_car" route="route11" begin="430"  end="700" period="35"/>
-    <flow id="medium_slow_car_HA_2" type="medium_car" route="route12" begin="430"  end="700" period="35"/>
-    <flow id="medium_slow_car_HA_3" type="medium_car" route="route6" begin="430"  end="700" period="35"/>
-    <flow id="flow_slow_motorcycle_HA_1" type="slow_motorcycle" route="route11" begin="430"  end="7000" period="45"/>
-    <flow id="flow_slow_motorcycle_HA_2" type="slow_motorcycle" route="route12" begin="430"  end="7000" period="45"/>
-    <flow id="flow_fast_motorcycle_HA_2" type="fast_motorcycle" route="route11" begin="430"  end="7000" period="45"/>
-    <flow id="flow_slow_motorcycle_HA_3" type="slow_motorcycle" route="route3" begin="430"  end="7000" period="45"/>
-
-    <flow id="flow_slow_bus_HR_1" type="slow_bus" route="route11" begin="430"  end="700" period="95">
-        <stop busStop="busstop1" duration="30"/>
-    </flow>
-
-    <flow id="flow_slow_bus_HR_2" type="slow_bus" route="route12" begin="430"  end="700" period="95"/>
-    
-    <flow id="flow_slow_bus_HR_3" type="slow_bus" route="route14" begin="430"  end="700" period="95"/>
-    <flow id="flow_slow_bus_HR_4" type="fast_bus" route="route16" begin="430"  end="700" probability="0.005">
-        <stop busStop="busstop1" duration="20"/>
-    </flow>
-    
-    <flow id="flow_fast_car_HR_1" type="fast_car" route="route2" begin="430"  end="700" probability="0.009"/>  
-    <flow id="flow_fast_car_HR_2" type="fast_car" route="route8" begin="430"  end="700" probability="0.009"/>  -->
-
-    <!-- Tarde
-
-    Saida do Trabalho
-
-    Noitea -->
-    
-  <!-- <flow id="f1" type="Car"  route="rota0" begin="0"  end="900" period="30" />
-  <flow id="f2" type="Taxi" route="rota1" begin="0"   end="300" period="60" />
-  <flow id="f3" type="Bus"  route="rota0" begin="20" end="600" period="10">
-    <stop busStop="busstop1" until="410"/>
-  </flow>
-  <flow id="f4" type="Bus" route="rota0" begin="601" end="900" probability="0.1" color="0,1,0" /> -->
 
 </routes>
