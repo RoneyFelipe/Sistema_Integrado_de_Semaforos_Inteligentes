@@ -105,3 +105,4 @@ if __name__ == "__main__":
     traci.start([sumoBinary, "smartcities.netc.cfg -c", "sumo_simulation/smartcities.sumocfg",
                              "--tripinfo-output", "tripinfo.xml"])
     run()
+    
