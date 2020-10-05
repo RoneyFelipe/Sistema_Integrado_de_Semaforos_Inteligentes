@@ -8,7 +8,10 @@ class Population:
 
     def Principle(self):
         generation = [[]]*constant.MAXPOPULATION
-        for i in range(1, constant.MAXPOPULATION):
-           generation[i].append(self.create_guy.create_Cromossome())
         print(generation)
+        for i in range(0, constant.MAXPOPULATION):
+           generation[i] = self.create_guy.create_Cromossome()
+           print(i)
+        print(generation)
+        
 

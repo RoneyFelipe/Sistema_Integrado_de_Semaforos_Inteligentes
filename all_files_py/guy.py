@@ -4,6 +4,8 @@ import constant, population
 
 class Guy:
     def create_Cromossome(self): 
+        num_zeros = 0
+        num_one = 0
         cromossome = str()
         max_green_time = constant.CYCLE_TIME - (constant.YELLOW_TIME * 2) - (constant.MINFASE_TIME)
         total_period_time = constant.CYCLE_TIME - (constant.YELLOW_TIME * 2)
@@ -21,8 +23,11 @@ class Guy:
 
                 for i in range(0, total_period_time):
                     if i in genes_position:
-                        cromossome += str('1') 
+                        cromossome += str('1')
+                        num_one = num_one + 1 
                     else:
                         cromossome += str('0')
-        return cromossome
+                        num_zeros = num_zeros + 1
+                        
+        return cromossome,num_one,num_zeros
     
