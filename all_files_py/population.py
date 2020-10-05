@@ -13,5 +13,6 @@ class Population:
            generation[i] = self.create_guy.create_Cromossome()
            print(i)
         print(generation)
+        return generation
         
 
