@@ -7,9 +7,8 @@ import optparse
 import random
 
 
-sys.path.append('/all_files_py')
-from all_files_py.population import Population 
 
+from population import Population 
 
 
 # we need to import python modules from the $SUMO_HOME/tools directory
@@ -74,12 +73,14 @@ def generate_routefile():
 
 
 def run():
-    create_generation = Population.Principle()
+    create_generation = Population()
     """execute the TraCI control loop"""
     step = 0
     # we start with phase 2 where EW has green
-    print(create_generation.Principle()[2])
-    traci.trafficlight.setPhase("A", create_generation.Principle()[0])
+    print(create_generation.Principle())
+    posicao = create_generation.Principle()
+    posicao_final = posicao[0][2]
+    traci.trafficlight.setPhaseDuration("A", posicao_final)
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
         if traci.trafficlight.getPhase("A") == 2:
