@@ -1,5 +1,245 @@
 <additional>
     <busStop id="busstop1" lane="A_B_0" startPos="40" endPos="50" lines="A_B">
     </busStop>
-    
+
+    <!-- Laços de detecção de solo -->
+        <!-- Light A -->
+            <!-- Entrada AT_A -->
+                <inductionLoop id="AT_A_INPUT_0" lane="AT_A_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="AT_A_INPUT_1" lane="AT_A_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida AT_A -->
+                <inductionLoop id="AT_A_OUT_0" lane="AT_A_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="AT_A_OUT_1" lane="AT_A_1" pos="80" freq="50" file="NUL" />
+
+
+             <!-- Entrada A_AT -->
+                <inductionLoop id="A_AT_INPUT_0" lane="A_AT_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="A_AT_INPUT_1" lane="A_AT_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida A_AT -->
+                <inductionLoop id="A_AT_OUT_0" lane="A_AT_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="A_AT_OUT_1" lane="A_AT_1" pos="80" freq="50" file="NUL" />
+
+
+             <!-- Entrada A_AL -->
+                <inductionLoop id="A_AL_INPUT_0" lane="A_AL_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="A_AL_INPUT_1" lane="A_AL_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="A_AL_INPUT_2" lane="A_AL_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida A_AL -->
+                <inductionLoop id="A_AL_OUT_0" lane="A_AL_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="A_AL_OUT_1" lane="A_AL_1" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="A_AL_OUT_2" lane="A_AL_2" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada AL_A -->
+                <inductionLoop id="AL_A_INPUT_0" lane="AL_A_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="AL_A_INPUT_1" lane="AL_A_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="AL_A_INPUT_2" lane="AL_A_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida AL_A -->
+                <inductionLoop id="AL_A_OUT_0" lane="AL_A_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="AL_A_OUT_1" lane="AL_A_1" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="AL_A_OUT_2" lane="AL_A_2" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada A_F -->
+                <inductionLoop id="A_F_INPUT_0" lane="A_F_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="A_F_INPUT_1" lane="A_F_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida A_F -->
+                <inductionLoop id="A_F_OUT_0" lane="A_F_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="A_F_OUT_1" lane="A_F_1" pos="70" freq="50" file="NUL" />
+
+                
+            <!-- Entrada A_B -->
+                <inductionLoop id="A_B_INPUT_0" lane="A_B_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="A_B_INPUT_1" lane="A_B_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="A_B_INPUT_2" lane="A_B_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida A_B -->
+                <inductionLoop id="A_B_OUT_0" lane="A_B_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="A_B_OUT_1" lane="A_B_1" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="A_B_OUT_2" lane="A_B_2" pos="70" freq="50" file="NUL" />
+
+
+        <!-- Light B -->
+            <!-- Entrada BT_B -->
+                <inductionLoop id="BT_B_INPUT_0" lane="BT_B_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="BT_B_INPUT_1" lane="BT_B_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida BT_B -->
+                <inductionLoop id="BT_B_OUT_0" lane="BT_B_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="BT_B_OUT_1" lane="BT_B_1" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada B_BT -->
+                <inductionLoop id="B_BT_INPUT_0" lane="B_BT_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="B_BT_INPUT_1" lane="B_BT_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida B_BT -->
+                <inductionLoop id="B_BT_OUT_0" lane="B_BT_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="B_BT_OUT_1" lane="B_BT_1" pos="80" freq="50" file="NUL" />
+            
+
+            <!-- Entrada B_A -->
+                <inductionLoop id="B_A_INPUT_0" lane="B_A_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="B_A_INPUT_1" lane="B_A_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="B_A_INPUT_2" lane="B_A_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida B_A -->
+                <inductionLoop id="B_A_OUT_0" lane="B_A_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="B_A_OUT_1" lane="B_A_1" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="B_A_OUT_2" lane="B_A_2" pos="70" freq="50" file="NUL" />
+
+
+            <!-- Entrada B_C -->
+                <inductionLoop id="B_C_INPUT_0" lane="B_C_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="B_C_INPUT_1" lane="B_C_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="B_C_INPUT_2" lane="B_C_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida B_C -->
+                <inductionLoop id="B_C_OUT_0" lane="B_C_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="B_C_OUT_1" lane="B_C_1" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="B_C_OUT_2" lane="B_C_2" pos="70" freq="50" file="NUL" />
+
+                
+        <!-- Light C -->
+            <!-- Entrada CT_C -->
+                <inductionLoop id="CT_C_INPUT_0" lane="CT_C_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="CT_C_INPUT_1" lane="CT_C_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida CT_C -->
+                <inductionLoop id="CT_C_OUT_0" lane="CT_C_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="CT_C_OUT_1" lane="CT_C_1" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada C_CT -->
+                <inductionLoop id="C_CT_INPUT_0" lane="C_CT_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="C_CT_INPUT_1" lane="C_CT_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida C_CT -->
+                <inductionLoop id="C_CT_OUT_0" lane="C_CT_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="C_CT_OUT_1" lane="C_CT_1" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada C_CR -->
+                <inductionLoop id="C_CR_INPUT_0" lane="C_CR_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="C_CR_INPUT_1" lane="C_CR_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="C_CR_INPUT_2" lane="C_CR_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida C_CR -->
+                <inductionLoop id="C_CR_OUT_0" lane="C_CR_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="C_CR_OUT_1" lane="C_CR_1" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="C_CR_OUT_2" lane="C_CR_2" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada CR_C -->
+                <inductionLoop id="CR_C_INPUT_0" lane="CR_C_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="CR_C_INPUT_1" lane="CR_C_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="CR_C_INPUT_2" lane="CR_C_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida CR_C -->
+                <inductionLoop id="CR_C_OUT_0" lane="CR_C_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="CR_C_OUT_1" lane="CR_C_1" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="CR_C_OUT_2" lane="CR_C_2" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada C_B -->
+                <inductionLoop id="C_B_INPUT_0" lane="C_B_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="C_B_INPUT_1" lane="C_B_1" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="C_B_INPUT_2" lane="C_B_2" pos="9" freq="50" file="NUL" />
+            <!-- Saida C_B -->
+                <inductionLoop id="C_B_OUT_0" lane="C_B_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="C_B_OUT_1" lane="C_B_1" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="C_B_OUT_2" lane="C_B_2" pos="70" freq="50" file="NUL" />
+
+             <!-- Entrada D_C -->
+                <inductionLoop id="D_C_INPUT_0" lane="D_C_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="D_C_INPUT_1" lane="D_C_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida D_C -->
+                <inductionLoop id="D_C_OUT_0" lane="D_C_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="D_C_OUT_1" lane="D_C_1" pos="70" freq="50" file="NUL" />
+
+
+        <!-- Light E -->
+
+            <!-- Entrada E_EB -->
+                <inductionLoop id="E_EB_INPUT_0" lane="E_EB_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="E_EB_INPUT_1" lane="E_EB_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida E_EB -->
+                <inductionLoop id="E_EB_OUT_0" lane="E_EB_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="E_EB_OUT_1" lane="E_EB_1" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada EB_E-->
+                <inductionLoop id="EB_E_INPUT_0" lane="EB_E_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="EB_E_INPUT_1" lane="EB_E_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida EB_E -->
+                <inductionLoop id="EB_D_OUT_0" lane="EB_E_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="EB_D_OUT_1" lane="EB_E_1" pos="80" freq="50" file="NUL" />
+            
+
+            <!-- Entrada E_F -->
+                <inductionLoop id="E_F_INPUT_0" lane="E_F_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="E_F_INPUT_1" lane="E_F_1" pos="9" freq="50" file="NUL" />
+            <!-- Saida E_F -->
+                <inductionLoop id="E_F_OUT_0" lane="E_F_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="E_F_OUT_1" lane="E_F_1" pos="70" freq="50" file="NUL" />
+              
+
+            <!-- Entrada E_D -->
+                <inductionLoop id="E_D_INPUT_0" lane="E_D_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="E_D_INPUT_1" lane="E_D_1" pos="9" freq="50" file="NUL" />
+            <!-- Saida E_D -->
+                <inductionLoop id="E_D_OUT_0" lane="E_D_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="E_D_OUT_1" lane="E_D_1" pos="70" freq="50" file="NUL" />
+
+
+            <!-- Entrada D_E -->
+                <inductionLoop id="D_E_INPUT_0" lane="D_E_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="D_E_INPUT_1" lane="D_E_1" pos="9" freq="50" file="NUL" />
+            <!-- Saida D_E -->
+                <inductionLoop id="D_E_OUT_0" lane="D_E_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="D_E_OUT_1" lane="D_E_1" pos="70" freq="50" file="NUL" />
+                
+
+
+        <!-- Light f -->
+
+            <!-- Entrada F_A -->
+                <inductionLoop id="F_A_INPUT_0" lane="F_A_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="F_A_INPUT_1" lane="F_A_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida F_A -->
+                <inductionLoop id="F_A_OUT_0" lane="F_A_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="F_A_OUT_1" lane="F_A_1" pos="70" freq="50" file="NUL" />
+
+
+             <!-- Entrada F_FL -->
+                <inductionLoop id="F_FL_INPUT_0" lane="F_FL_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="F_FL_INPUT_1" lane="F_FL_1" pos="9" freq="50" file="NUL" />
+            <!-- Saida F_FL -->
+                <inductionLoop id="F_FL_OUT_0" lane="F_FL_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="F_FL_OUT_1" lane="F_FL_1" pos="80" freq="50" file="NUL" />
+
+
+             <!-- Entrada F_FB -->
+                <inductionLoop id="F_FB_INPUT_0" lane="F_FB_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="F_FB_INPUT_1" lane="F_FB_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida F_FB -->
+                <inductionLoop id="F_FB_OUT_0" lane="F_FB_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="F_FB_OUT_1" lane="F_FB_1" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada FB_F-->
+                <inductionLoop id="FB_F_INPUT_0" lane="FB_F_0" pos="6.5" freq="50" file="NUL" />
+                <inductionLoop id="FB_F_INPUT_1" lane="FB_F_1" pos="6.5" freq="50" file="NUL" />
+            <!-- Saida FB_F -->
+                <inductionLoop id="FB_F_OUT_0" lane="FB_F_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="FB_F_OUT_1" lane="FB_F_1" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Entrada FL_F -->
+                <inductionLoop id="FL_F_INPUT_0" lane="FL_F_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="FL_F_INPUT_1" lane="FL_F_1" pos="9" freq="50" file="NUL" />
+            <!-- Saida FL_F -->
+                <inductionLoop id="FL_F_OUT_0" lane="FL_F_0" pos="80" freq="50" file="NUL" />
+                <inductionLoop id="FL_F_OUT_1" lane="FL_F_1" pos="80" freq="50" file="NUL" />
+
+
+            <!-- Saida F_E -->
+                <inductionLoop id="F_E_OUT_0" lane="F_E_0" pos="70" freq="50" file="NUL" />
+                <inductionLoop id="F_E_OUT_1" lane="F_E_1" pos="70" freq="50" file="NUL" />
+            <!-- Entrada F_D -->
+                <inductionLoop id="F_E_INPUT_0" lane="F_E_0" pos="9" freq="50" file="NUL" />
+                <inductionLoop id="F_E_INPUT_1" lane="F_E_1" pos="9" freq="50" file="NUL" />
+
+            
 </additional>

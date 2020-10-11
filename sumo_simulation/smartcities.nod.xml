@@ -2,7 +2,7 @@
     <node id="A" x="100.0" y="0.0" type="traffic_light"/>
     <node id="AL" x="0.0" y="0"/>
     <node id="AT" x="100.0" y="100.0"/>
-    
+
     <node id="B" x="200.0" y="0.0" type="traffic_light"/>
     <node id="BT" x="200.0" y="100.0"/>
 

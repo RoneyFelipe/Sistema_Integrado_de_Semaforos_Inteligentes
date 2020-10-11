@@ -45,6 +45,7 @@ def generate_routefile():
     <route id="CR_C/C_B/B_A/A_AL" edges="CR_C C_B B_A A_AL"/>
     <route id="DR_D/D_E/E_F/F_FL" edges="DR_D D_E E_F F_FL"/>
     <route id="FL_F/F_E/E_D/D_DR" edges="FL_F F_E E_D D_DR"/>
+    <route id="AT_A/A_F/F_FB" edges="AT_A A_F F_FB"/>
         """, file=routes)
         vehNr = 0
         for i in range(N):
@@ -53,7 +54,7 @@ def generate_routefile():
                     vehNr, i), file=routes)
                 vehNr += 1
             if random.uniform(0, 1) < pEW:
-                print('    <vehicle id="left_%i" type="slow_car" route="AL_A/A_B/B_C/C_CR" depart="%i" />' % (
+                print('    <vehicle id="left_%i" type="slow_car" route="AT_A/A_F/F_FB" depart="%i" />' % (
                     vehNr, i), file=routes)
                 vehNr += 1
             if random.uniform(0, 1) < pNS:
@@ -80,14 +81,15 @@ def run():
     print(create_generation.Principle())
     posicao = create_generation.Principle()
     posicao_final = posicao[0][2]
-    traci.trafficlight.setPhaseDuration("A", posicao_final)
+    traci.trafficlight.setPhaseDuration("A", 5)
+    
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
         if traci.trafficlight.getPhase("A") == 2:
             # we are not already switching
-            if traci.inductionloop.getLastStepVehicleNumber("A") > 0:
+            if traci.inductionloop.getLastStepVehicleNumber("A_AL_OUT_0") > 0:
                 # there is a vehicle from the north, switch
-                traci.trafficlight.setPhase("A", 3)
+                traci.trafficlight.setPhase("B", 3)
             else:
                 # otherwise try to keep green for EW
                 traci.trafficlight.setPhase("A", 2)
