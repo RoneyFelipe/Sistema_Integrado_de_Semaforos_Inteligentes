@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 10/11/20 21:40:19 by Eclipse SUMO GUI Version 1.7.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="sumo_simulation/smartcities.net.xml"/>
+        <route-files value="sumo_simulation/smartcities.rou.xml"/>
+        <additional-files value="sumo_simulation/smartcities.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="2400"/>
+    </time>
+
+    <traci_server>
+        <remote-port value="56312"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="left_0" depart="0.00" departLane="AT_A_0" departPos="6.10" departSpeed="0.00" departDelay="0.00" arrival="38.00" arrivalLane="F_FB_0" arrivalPos="89.60" arrivalSpeed="15.00" duration="38.00" routeLength="293.90" waitingTime="2.00" waitingCount="1" stopTime="0.00" timeLoss="18.92" rerouteNo="0" devices="tripinfo_left_0" vType="slow_car" speedFactor="1.06" vaporized=""/>
+    <tripinfo id="left_1" depart="4.00" departLane="AT_A_0" departPos="6.10" departSpeed="0.00" departDelay="2.00" arrival="46.00" arrivalLane="F_FB_1" arrivalPos="89.60" arrivalSpeed="14.07" duration="42.00" routeLength="293.90" waitingTime="4.00" waitingCount="2" stopTime="0.00" timeLoss="20.50" rerouteNo="0" devices="tripinfo_left_1" vType="slow_car" speedFactor="0.94" vaporized=""/>
+    <tripinfo id="left_4" depart="8.00" departLane="AT_A_0" departPos="6.10" departSpeed="0.00" departDelay="2.00" arrival="46.00" arrivalLane="F_FB_0" arrivalPos="89.60" arrivalSpeed="15.00" duration="38.00" routeLength="293.90" waitingTime="2.00" waitingCount="1" stopTime="0.00" timeLoss="18.37" rerouteNo="0" devices="tripinfo_left_4" vType="slow_car" speedFactor="1.03" vaporized=""/>
+    <tripinfo id="left_6" depart="22.00" departLane="AT_A_0" departPos="6.10" departSpeed="0.00" departDelay="0.00" arrival="56.00" arrivalLane="F_FB_0" arrivalPos="89.60" arrivalSpeed="15.40" duration="34.00" routeLength="293.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="14.57" rerouteNo="0" devices="tripinfo_left_6" vType="slow_car" speedFactor="1.05" vaporized=""/>
+    <tripinfo id="left_7" depart="31.00" departLane="AT_A_0" departPos="6.10" departSpeed="0.00" departDelay="0.00" arrival="70.00" arrivalLane="F_FB_0" arrivalPos="89.60" arrivalSpeed="13.29" duration="39.00" routeLength="293.90" waitingTime="2.00" waitingCount="1" stopTime="0.00" timeLoss="16.35" rerouteNo="0" devices="tripinfo_left_7" vType="slow_car" speedFactor="0.89" vaporized=""/>
+    <tripinfo id="left_8" depart="35.00" departLane="AT_A_0" departPos="6.10" departSpeed="0.00" departDelay="2.00" arrival="74.00" arrivalLane="F_FB_1" arrivalPos="89.60" arrivalSpeed="14.07" duration="39.00" routeLength="293.90" waitingTime="2.00" waitingCount="1" stopTime="0.00" timeLoss="17.50" rerouteNo="0" devices="tripinfo_left_8" vType="slow_car" speedFactor="0.94" vaporized=""/>
+    <tripinfo id="left_9" depart="41.00" departLane="AT_A_0" departPos="6.10" departSpeed="0.00" departDelay="0.00" arrival="78.00" arrivalLane="F_FB_0" arrivalPos="89.60" arrivalSpeed="12.85" duration="37.00" routeLength="293.90" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="13.44" rerouteNo="0" devices="tripinfo_left_9" vType="slow_car" speedFactor="0.86" vaporized=""/>

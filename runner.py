@@ -81,7 +81,7 @@ def run():
     print(create_generation.Principle())
     posicao = create_generation.Principle()
     posicao_final = posicao[0][2]
-    traci.trafficlight.setPhaseDuration("A", 5)
+    traci.trafficlight.setPhaseDuration("A", posicao_final)
     
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
@@ -89,10 +89,10 @@ def run():
             # we are not already switching
             if traci.inductionloop.getLastStepVehicleNumber("A_AL_OUT_0") > 0:
                 # there is a vehicle from the north, switch
-                traci.trafficlight.setPhase("B", 3)
+                traci.trafficlight.setPhase("A", 0)
             else:
                 # otherwise try to keep green for EW
-                traci.trafficlight.setPhase("A", 2)
+                traci.trafficlight.setPhase("A", 1)
         step += 1
     traci.close()
     sys.stdout.flush()
