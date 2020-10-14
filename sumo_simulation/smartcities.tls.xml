@@ -1,33 +1,33 @@
 <tlLogics>
 
-    <tlLogic id="A" type="static" programID="A_TLS" offset="0">
-        <phase duration="1" state="ggggrrrrrggggrrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
+    <tlLogic id="A" type="actuated" programID="A_TLS" offset="0">
         <phase duration="1" state="rrrrgggggrrrrggggg"/>
+        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="1" state="ggggrrrrrggggrrrrr"/>
     </tlLogic>
 
     <tlLogic id="B" type="actuated" programID="B_TLS" offset="0">
-        <phase duration="1" state="ggggrrrrrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyy"/>
         <phase duration="1" state="gggggggggggg"/>
+        <phase duration="2" state="yyyyyyyyyyyy"/>
+        <phase duration="1" state="ggggrrrrrrrr"/>
     </tlLogic>
 
     <tlLogic id="C" type="actuated" programID="C_TLS" offset="0">
-       <phase duration="1" state="ggggrrrrrggggrrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
         <phase duration="1" state="rrrrgggggrrrrggggg"/>
+        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="1" state="ggggrrrrrggggrrrrr"/>
     </tlLogic>
 
     <tlLogic id="F" type="actuated" programID="F_TLS" offset="0">
-        <phase duration="1" state="ggggrrrrggggrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyy"/>
         <phase duration="1" state="rrrrgggggrrrrggg"/>
+        <phase duration="2" state="yyyyyyyyyyyyyyyy"/>
+        <phase duration="1" state="ggggrrrrggggrrrr"/>
     </tlLogic>
 
     <tlLogic id="E" type="actuated" programID="E_TLS" offset="0">
-        <phase duration="1" state="gggrrrgggg"/>
-        <phase duration="2" state="yyyyyyyyyy"/>
         <phase duration="1" state="gggggggggg"/>
+        <phase duration="2" state="yyyyyyyyyy"/>
+        <phase duration="1" state="gggrrrgggg"/>
     </tlLogic>
 
 </tlLogics>

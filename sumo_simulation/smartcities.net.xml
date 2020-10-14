@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 10/11/20 21:40:15 by Eclipse SUMO netconvert Version 1.6.0
+<!-- generated on 10/14/20 12:41:22 by Eclipse SUMO netconvert Version 1.6.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -443,30 +443,30 @@
         <lane id="F_FL_1" index="1" speed="15.00" length="89.60" shape="89.60,101.60 0.00,101.60"/>
     </edge>
 
-    <tlLogic id="A" type="static" programID="A_TLS" offset="0">
-        <phase duration="1"  state="ggggrrrrrggggrrrrr"/>
-        <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
+    <tlLogic id="A" type="actuated" programID="A_TLS" offset="0">
         <phase duration="1"  state="rrrrgggggrrrrggggg"/>
+        <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="1"  state="ggggrrrrrggggrrrrr"/>
     </tlLogic>
     <tlLogic id="B" type="actuated" programID="B_TLS" offset="0">
-        <phase duration="1"  state="ggggrrrrrrrr"/>
-        <phase duration="2"  state="yyyyyyyyyyyy"/>
         <phase duration="1"  state="gggggggggggg"/>
+        <phase duration="2"  state="yyyyyyyyyyyy"/>
+        <phase duration="1"  state="ggggrrrrrrrr"/>
     </tlLogic>
     <tlLogic id="C" type="actuated" programID="C_TLS" offset="0">
-        <phase duration="1"  state="ggggrrrrrggggrrrrr"/>
-        <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
         <phase duration="1"  state="rrrrgggggrrrrggggg"/>
+        <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="1"  state="ggggrrrrrggggrrrrr"/>
     </tlLogic>
     <tlLogic id="E" type="actuated" programID="E_TLS" offset="0">
-        <phase duration="1"  state="gggrrrgggg"/>
-        <phase duration="2"  state="yyyyyyyyyy"/>
         <phase duration="1"  state="gggggggggg"/>
+        <phase duration="2"  state="yyyyyyyyyy"/>
+        <phase duration="1"  state="gggrrrgggg"/>
     </tlLogic>
     <tlLogic id="F" type="actuated" programID="F_TLS" offset="0">
-        <phase duration="1"  state="ggggrrrrggggrrrr"/>
-        <phase duration="2"  state="yyyyyyyyyyyyyyyy"/>
         <phase duration="1"  state="rrrrgggggrrrrggg"/>
+        <phase duration="2"  state="yyyyyyyyyyyyyyyy"/>
+        <phase duration="1"  state="ggggrrrrggggrrrr"/>
     </tlLogic>
 
     <junction id="A" type="traffic_light" x="100.00" y="200.00" incLanes="AT_A_0 AT_A_1 B_A_0 B_A_1 B_A_2 F_A_0 F_A_1 AL_A_0 AL_A_1 AL_A_2" intLanes=":A_0_0 :A_1_0 :A_1_1 :A_18_0 :A_4_0 :A_5_0 :A_5_1 :A_5_2 :A_19_0 :A_9_0 :A_10_0 :A_10_1 :A_20_0 :A_13_0 :A_14_0 :A_14_1 :A_14_2 :A_21_0" shape="93.60,213.60 106.40,213.60 106.84,211.38 107.40,210.60 108.18,210.04 109.18,209.71 110.40,209.60 110.40,190.40 108.18,189.96 107.40,189.40 106.84,188.62 106.51,187.62 106.40,186.40 93.60,186.40 93.16,188.62 92.60,189.40 91.82,189.96 90.82,190.29 89.60,190.40 89.60,209.60 91.82,210.04 92.60,210.60 93.16,211.38 93.49,212.38">

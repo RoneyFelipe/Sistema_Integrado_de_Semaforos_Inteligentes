@@ -78,21 +78,40 @@ def run():
     """execute the TraCI control loop"""
     step = 0
     # we start with phase 2 where EW has green
-    print(create_generation.Principle())
-    posicao = create_generation.Principle()
-    posicao_final = posicao[0][2]
-    traci.trafficlight.setPhaseDuration("A", posicao_final)
     
+    posicao = create_generation.Principle()
+    time_of_green = posicao[0][2]
+    time_of_red = posicao[0][1]
+    cycle = 0
+    print('Tempo de Verde',time_of_green)
+    print('Tempo de Vermelho',time_of_red)
     while traci.simulation.getMinExpectedNumber() > 0:
-        traci.simulationStep()
-        if traci.trafficlight.getPhase("A") == 2:
-            # we are not already switching
-            if traci.inductionloop.getLastStepVehicleNumber("A_AL_OUT_0") > 0:
-                # there is a vehicle from the north, switch
-                traci.trafficlight.setPhase("A", 0)
-            else:
-                # otherwise try to keep green for EW
-                traci.trafficlight.setPhase("A", 1)
+        traci.simulationStep() 
+        if cycle == 0 and traci.trafficlight.getPhase("A") == 0: 
+            traci.trafficlight.setPhase("A", 0)
+            traci.trafficlight.setPhase("B", 0)
+            traci.trafficlight.setPhase("C", 0)
+            traci.trafficlight.setPhase("E", 0)
+            traci.trafficlight.setPhase("F", 0)
+            traci.trafficlight.setPhaseDuration("A",  time_of_green)
+            traci.trafficlight.setPhaseDuration("B",  time_of_green)
+            traci.trafficlight.setPhaseDuration("C",  time_of_green)
+            traci.trafficlight.setPhaseDuration("E",  time_of_green)
+            traci.trafficlight.setPhaseDuration("F",  time_of_green)
+            cycle = 1
+        else:
+            if cycle == 1 and traci.trafficlight.getPhase("A") == 2:
+                traci.trafficlight.setPhase("A", 2)
+                traci.trafficlight.setPhase("B", 2)
+                traci.trafficlight.setPhase("C", 2)
+                traci.trafficlight.setPhase("E", 2)
+                traci.trafficlight.setPhase("F", 2)
+                traci.trafficlight.setPhaseDuration("A",  time_of_red)
+                traci.trafficlight.setPhaseDuration("B",  time_of_red)
+                traci.trafficlight.setPhaseDuration("C",  time_of_red)
+                traci.trafficlight.setPhaseDuration("E",  time_of_red)
+                traci.trafficlight.setPhaseDuration("F",  time_of_red)
+                cycle = 0
         step += 1
     traci.close()
     sys.stdout.flush()

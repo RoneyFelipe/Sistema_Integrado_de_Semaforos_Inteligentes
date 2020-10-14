@@ -21,13 +21,13 @@ class Guy:
                     pseudo_gene = random.randrange(0, total_period_time)
                 genes_position.append(pseudo_gene)
 
-                for i in range(0, total_period_time):
-                    if i in genes_position:
-                        cromossome += str('1')
-                        num_one = num_one + 1 
-                    else:
-                        cromossome += str('0')
-                        num_zeros = num_zeros + 1
+            for i in range(0, total_period_time):
+                if i in genes_position:
+                    cromossome += str('1')
+                    num_one = num_one + 1 
+                else:
+                    cromossome += str('0')
+                    num_zeros = num_zeros + 1
                         
         return cromossome,num_one,num_zeros
     
