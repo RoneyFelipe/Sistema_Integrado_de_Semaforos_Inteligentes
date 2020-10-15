@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 10/14/20 12:41:22 by Eclipse SUMO netconvert Version 1.6.0
+<!-- generated on 10/15/20 13:44:37 by Eclipse SUMO netconvert Version 1.6.0
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
@@ -447,26 +447,31 @@
         <phase duration="1"  state="rrrrgggggrrrrggggg"/>
         <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
         <phase duration="1"  state="ggggrrrrrggggrrrrr"/>
+        <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
     </tlLogic>
     <tlLogic id="B" type="actuated" programID="B_TLS" offset="0">
-        <phase duration="1"  state="gggggggggggg"/>
+        <phase duration="1"  state="rrrrgggggggg"/>
         <phase duration="2"  state="yyyyyyyyyyyy"/>
-        <phase duration="1"  state="ggggrrrrrrrr"/>
+        <phase duration="1"  state="ggggggggrrrr"/>
+        <phase duration="2"  state="yyyyyyyyyyyy"/>
     </tlLogic>
     <tlLogic id="C" type="actuated" programID="C_TLS" offset="0">
         <phase duration="1"  state="rrrrgggggrrrrggggg"/>
         <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
         <phase duration="1"  state="ggggrrrrrggggrrrrr"/>
+        <phase duration="2"  state="yyyyyyyyyyyyyyyyyy"/>
     </tlLogic>
     <tlLogic id="E" type="actuated" programID="E_TLS" offset="0">
         <phase duration="1"  state="gggggggggg"/>
         <phase duration="2"  state="yyyyyyyyyy"/>
         <phase duration="1"  state="gggrrrgggg"/>
+        <phase duration="2"  state="yyyyyyyyyy"/>
     </tlLogic>
     <tlLogic id="F" type="actuated" programID="F_TLS" offset="0">
-        <phase duration="1"  state="rrrrgggggrrrrggg"/>
+        <phase duration="1"  state="rrrrggggrrrrgggg"/>
         <phase duration="2"  state="yyyyyyyyyyyyyyyy"/>
         <phase duration="1"  state="ggggrrrrggggrrrr"/>
+        <phase duration="2"  state="yyyyyyyyyyyyyyyy"/>
     </tlLogic>
 
     <junction id="A" type="traffic_light" x="100.00" y="200.00" incLanes="AT_A_0 AT_A_1 B_A_0 B_A_1 B_A_2 F_A_0 F_A_1 AL_A_0 AL_A_1 AL_A_2" intLanes=":A_0_0 :A_1_0 :A_1_1 :A_18_0 :A_4_0 :A_5_0 :A_5_1 :A_5_2 :A_19_0 :A_9_0 :A_10_0 :A_10_1 :A_20_0 :A_13_0 :A_14_0 :A_14_1 :A_14_2 :A_21_0" shape="93.60,213.60 106.40,213.60 106.84,211.38 107.40,210.60 108.18,210.04 109.18,209.71 110.40,209.60 110.40,190.40 108.18,189.96 107.40,189.40 106.84,188.62 106.51,187.62 106.40,186.40 93.60,186.40 93.16,188.62 92.60,189.40 91.82,189.96 90.82,190.29 89.60,190.40 89.60,209.60 91.82,210.04 92.60,210.60 93.16,211.38 93.49,212.38">
@@ -500,9 +505,9 @@
         <request index="5"  response="000000000000" foes="100000001111" cont="0"/>
         <request index="6"  response="000000000000" foes="100000001111" cont="0"/>
         <request index="7"  response="000000000000" foes="100000001111" cont="0"/>
-        <request index="8"  response="000000000000" foes="000000001100" cont="0"/>
-        <request index="9"  response="000000000000" foes="000000001100" cont="0"/>
-        <request index="10" response="000000000000" foes="000000001100" cont="0"/>
+        <request index="8"  response="000000001100" foes="000000001100" cont="0"/>
+        <request index="9"  response="000000001100" foes="000000001100" cont="0"/>
+        <request index="10" response="000000001100" foes="000000001100" cont="0"/>
         <request index="11" response="000011101100" foes="000011101100" cont="1"/>
     </junction>
     <junction id="BT" type="dead_end" x="200.00" y="300.00" incLanes="B_BT_0 B_BT_1" intLanes="" shape="200.00,300.00 206.40,300.00 200.00,300.00"/>
@@ -585,8 +590,8 @@
     <junction id=":A_19_0" type="internal" x="104.29" y="200.00" incLanes=":A_8_0 AL_A_0 AL_A_1 AL_A_2" intLanes=":A_1_0 :A_1_1 :A_3_0 :A_10_0 :A_10_1 :A_12_0 :A_13_0 :A_14_0 :A_14_1 :A_14_2"/>
     <junction id=":A_20_0" type="internal" x="100.00" y="194.84" incLanes=":A_12_0 AT_A_0 AT_A_1" intLanes=":A_0_0 :A_1_0 :A_1_1 :A_5_0 :A_5_1 :A_5_2 :A_8_0 :A_14_0 :A_14_1 :A_14_2 :A_17_0"/>
     <junction id=":A_21_0" type="internal" x="95.71" y="200.00" incLanes=":A_17_0 B_A_0 B_A_1 B_A_2" intLanes=":A_1_0 :A_1_1 :A_3_0 :A_4_0 :A_5_0 :A_5_1 :A_5_2 :A_10_0 :A_10_1 :A_12_0"/>
-    <junction id=":B_12_0" type="internal" x="198.77" y="209.60" incLanes=":B_2_0 A_B_0 A_B_1 A_B_2 C_B_0 C_B_1 C_B_2" intLanes=":B_5_0 :B_5_1 :B_5_2 :B_8_0 :B_8_1 :B_8_2 :B_11_0"/>
-    <junction id=":B_13_0" type="internal" x="198.85" y="209.60" incLanes=":B_3_0 A_B_0 A_B_1 A_B_2 C_B_0 C_B_1 C_B_2" intLanes=":B_5_0 :B_5_1 :B_5_2 :B_8_0 :B_8_1 :B_8_2 :B_11_0"/>
+    <junction id=":B_12_0" type="internal" x="198.77" y="209.60" incLanes=":B_2_0 C_B_0 C_B_1 C_B_2" intLanes=":B_5_0 :B_5_1 :B_5_2 :B_8_0 :B_8_1 :B_8_2 :B_11_0"/>
+    <junction id=":B_13_0" type="internal" x="198.85" y="209.60" incLanes=":B_3_0 C_B_0 C_B_1 C_B_2" intLanes=":B_5_0 :B_5_1 :B_5_2 :B_8_0 :B_8_1 :B_8_2 :B_11_0"/>
     <junction id=":B_14_0" type="internal" x="195.71" y="200.00" incLanes=":B_11_0 C_B_0 C_B_1 C_B_2" intLanes=":B_2_0 :B_3_0 :B_5_0 :B_5_1 :B_5_2"/>
     <junction id=":C_18_0" type="internal" x="300.00" y="205.16" incLanes=":C_3_0 D_C_0 D_C_1" intLanes=":C_5_0 :C_5_1 :C_5_2 :C_8_0 :C_9_0 :C_10_0 :C_10_1 :C_14_0 :C_14_1 :C_14_2 :C_17_0"/>
     <junction id=":C_19_0" type="internal" x="304.29" y="200.00" incLanes=":C_8_0 B_C_0 B_C_1 B_C_2" intLanes=":C_1_0 :C_1_1 :C_3_0 :C_10_0 :C_10_1 :C_12_0 :C_13_0 :C_14_0 :C_14_1 :C_14_2"/>
