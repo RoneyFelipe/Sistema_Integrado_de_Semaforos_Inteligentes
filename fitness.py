@@ -1,14 +1,8 @@
 import os, subprocess, sys, socket, time, struct, random, datetime
 
-import constant, guy, smartCities, population, runner
+import constant, guy, smartCities, population
 
 from population import Population 
+from runner import simulation 
 
-
-def fitness ():
-    evaluation = []*20
-    for i in range(0, 20):
-        evaluation[i] = runner.run(i)
-    print(evaluation)
-
-fitness()
+simulation()

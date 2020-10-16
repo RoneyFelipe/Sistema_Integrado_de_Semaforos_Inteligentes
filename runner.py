@@ -12,6 +12,7 @@ from population import Population
 
 
 # we need to import python modules from the $SUMO_HOME/tools directory
+
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
     sys.path.append(tools)
@@ -29,7 +30,7 @@ def generate_routefile():
     pWE = 1. / 10
     pEW = 1. / 11
     pNS = 1. / 30
-    # pSN = 1. / 31
+    pSN = 1. / 31
     with open("sumo_simulation/smartcities.rou.xml", "w") as routes:
         print("""<routes>
     <vType id="slow_car" accel="1" decel="6" length="6" minGap="0.2" maxSpeed="30.0" sigma="0.0" color="0,1,0"/>
@@ -124,12 +125,12 @@ def generate_routefile():
                     vehNr, i), file=routes)
                 vehNr += 1
 
-            if random.uniform(0, 1) < pNS:
+            if random.uniform(0, 1) < pSN:
                 print('    <vehicle id="right_%i" type="slow_car" route="FB_F/F_A/A_AT" depart="%i" />' % (
                     vehNr, i), file=routes)
                 vehNr += 1
 
-            if random.uniform(0, 1) < pNS:
+            if random.uniform(0, 1) < pSN:
                 print('    <vehicle id="right_%i" type="slow_car" route="DB_D/D_C/C_CT" depart="%i" />' % (
                     vehNr, i), file=routes)
                 vehNr += 1
@@ -175,7 +176,7 @@ def run():
             traci.trafficlight.setPhaseDuration("E",  time_of_green)
             traci.trafficlight.setPhaseDuration("F",  time_of_green)
             cycle = 1
-            #Adicionar o tempo de amarelo
+            
         else:
             if cycle == 1 and traci.trafficlight.getPhase("A") == 2:
                 traci.trafficlight.setPhase("A", 2)
@@ -192,10 +193,6 @@ def run():
         step += 1
     traci.close()
     sys.stdout.flush()
-    
-
-
-
 
 def get_options():
     optParser = optparse.OptionParser()
@@ -207,7 +204,6 @@ def get_options():
 # this is the main entry point of this script
 if __name__ == "__main__":
     options = get_options()
-
     # this script has been called from the command line. It will start sumo as a
     # server, then connect and run
     if options.nogui:

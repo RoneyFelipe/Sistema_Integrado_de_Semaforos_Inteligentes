@@ -2,37 +2,41 @@
 
     <tlLogic id="A" type="actuated" programID="A_TLS" offset="0">
         <phase duration="1" state="rrrrgggggrrrrggggg"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="2" state="rrrryyyyyrrrryyyyy"/>
         <phase duration="1" state="ggggrrrrrggggrrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="2" state="yyyyrrrrryyyyrrrrr"/>
+        
     </tlLogic>
 
     <tlLogic id="B" type="actuated" programID="B_TLS" offset="0">
         <phase duration="1" state="rrrrgggggggg"/>
-        <phase duration="2" state="yyyyyyyyyyyy"/>
+        <phase duration="2" state="rrrryyyyyyyy"/>
         <phase duration="1" state="ggggggggrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyy"/>
+        <phase duration="2" state="yyyyyyyyrrrr"/>
+        
     </tlLogic>
 
     <tlLogic id="C" type="actuated" programID="C_TLS" offset="0">
         <phase duration="1" state="rrrrgggggrrrrggggg"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="2" state="rrrryyyyyrrrryyyyy"/>
         <phase duration="1" state="ggggrrrrrggggrrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyyyy"/>
+        <phase duration="2" state="yyyyrrrrryyyyrrrrr"/>
+        
     </tlLogic>
 
     <tlLogic id="F" type="actuated" programID="F_TLS" offset="0">
         <phase duration="1" state="rrrrggggrrrrgggg"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyy"/>
+        <phase duration="2" state="rrrryyyyrrrryyyy"/>
         <phase duration="1" state="ggggrrrrggggrrrr"/>
-        <phase duration="2" state="yyyyyyyyyyyyyyyy"/>
+        <phase duration="2" state="yyyyrrrryyyyrrrr"/>
+        
     </tlLogic>
 
     <tlLogic id="E" type="actuated" programID="E_TLS" offset="0">
-        <phase duration="1" state="gggggggggg"/>
-        <phase duration="2" state="yyyyyyyyyy"/>
         <phase duration="1" state="gggrrrgggg"/>
-        <phase duration="2" state="yyyyyyyyyy"/>
+        <phase duration="2" state="yyyrrryyyy"/>
+        <phase duration="1" state="rrrgggrrrr"/>
+        <phase duration="2" state="rrryyyrrrr"/>
     </tlLogic>
 
 </tlLogics>
