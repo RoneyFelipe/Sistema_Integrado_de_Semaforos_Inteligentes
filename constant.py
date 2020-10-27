@@ -1,16 +1,8 @@
 #Constantes de Tempo
-SIMULATION_TIME = 720
-CYCLE_TIME = 60
-OFFSET = 10
-IGNORECYCLES = 2
-YELLOW_TIME = 2
-MINFASE_TIME = 2
-LIGHTSID = ["A","B"]
+SIMULATION_TIME = 720 #Tempo máximo de simulação de cada indivíduo
+CYCLE_TIME = 60 #Tempo total de cada ciclo
+YELLOW_TIME = 2 #Tempo total da fase amarela de cada ciclo
+MINFASE_TIME = 2 #Total de ciclos mínimos para cada fase do semáforo
 
-#Contantes Geneticas
-MAXPOPULATION = 20
-MAXGENERATIONS = 10
-MUTATIONRATE = 0.3
-MUTATIONGENERATE = 0.05
-CREATEGUY = 1
-
+#Contantes Genéticas
+MAXPOPULATION = 20 #Total de indivíduos de cada geração
