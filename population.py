@@ -13,3 +13,4 @@ class Population:
         print(generation)
         return generation #Retorna a matriz com todas as posições preenchidas por indivíduos
         
+        

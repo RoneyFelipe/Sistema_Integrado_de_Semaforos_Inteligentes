@@ -331,3 +331,4 @@ if __name__ == "__main__":
                              "--tripinfo-output", "tripinfo.xml"]) #Executa a simulação utilizando a Traci via esse mesmo script python
 
     run()
+

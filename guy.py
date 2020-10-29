@@ -29,3 +29,4 @@ class Guy:
                 num_zeros = num_zeros + 1 #Aumenta em 1 a quantidade de algarismos uns
                         
         return cromossome,num_one,num_zeros #Retorna o indivíduo; a quantidade de algarismos um; e a quantidade de algarismos zeros
+

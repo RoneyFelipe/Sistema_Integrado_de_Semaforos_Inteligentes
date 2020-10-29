@@ -1,5 +1,4 @@
 <tlLogics>
-
     <tlLogic id="A" type="actuated" programID="A_TLS" offset="0">
         <phase duration="1" state="rrrrgggggrrrrggggg"/>
         <phase duration="2" state="rrrryyyyyrrrryyyyy"/>
