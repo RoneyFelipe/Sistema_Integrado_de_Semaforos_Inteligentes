@@ -11,4 +11,4 @@
 # Para Iniciar a Aplicação:
 1. Primeiramente deve-se instalar o [softaware SUMO](https://www.eclipse.org/sumo/) e o [interpretador de códigos Python](https://www.python.org/downloads/). 
 2. Após isso, busque o arquivo runner.py e o execute, o SUMO irá iniciar a simulação.
-3. Para uma melhor visualização, aumente o tempo de delay da simulação.
+3. Para uma melhor visualização, aumente o tempo de *delay* da simulação e onde está selecionado *Standard* altere para *Real World*.

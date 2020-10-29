@@ -116,7 +116,7 @@ def generate_routefile():
 
         """, file=routes)
         vehNr = 0
-        #Estabele os veículos que circularão na simulação
+        #Estabelece os veículos que circularão na simulação
         for i in range(N):
             #Cars
             if random.uniform(0, 1) < pWE_car:
@@ -257,7 +257,7 @@ def run():
     """execute the TraCI control loop"""
     create_generation = Population() #Atribui a classe population do arquivo population.py a variável create_generation
     step = 0 #Variável que controla o loop de execução da Traci para manipular a simulação
-    position = create_generation.Principle() #Executa o metódo Principle reponsável por gerar os indivíduos que serão inseridos na simulaçã
+    position = create_generation.Principle() #Executa o metódo Principle reponsável por gerar os indivíduos que serão inseridos na simulação
     cycle_phase = 0 #Variável que controla o ciclo de cada fase, alterando se verde para vermelho quando necessário
     chosen_individual = 0 #Variável que seleciona o indivíduo, dentro da matriz, que será testada na simulação
     time_controller = 1 #Contrala o tempo de testagem de cada indivíduo

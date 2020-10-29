@@ -6,3 +6,4 @@ MINFASE_TIME = 2 #Total de ciclos mínimos para cada fase do semáforo
 
 #Contantes Genéticas
 MAXPOPULATION = 20 #Total de indivíduos de cada geração
+
